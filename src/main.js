@@ -11,6 +11,8 @@ try {
     app.use(express.json());
     app.use('/users', md.userRouter)
     app.use('/posts', md.postRouter)
+    app.use('/comments', md.commentRouter)
+
 
 
     app.all('{/*dummy}', (req, res) => {

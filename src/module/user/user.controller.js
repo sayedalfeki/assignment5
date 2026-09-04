@@ -21,7 +21,7 @@ userRouter.put('/:id', async (req, res) => {
 })
 userRouter.get('/by-email', async (req, res) => {
     const email = req.query.email
-    console.log(email);
+
 
     const result = await userServ.getUserByEmail(email)
     // @ts-ignore
